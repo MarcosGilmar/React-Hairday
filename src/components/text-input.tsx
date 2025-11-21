@@ -8,8 +8,8 @@ export const inputTextVariants = cva(`
     `, {
     variants: {
         variant: {
-            empty: "border-gray-500",
-            filled: "border-yellow-dark",
+            empty: "border-gray-500 text-gray-200",
+            filled: "border-yellow-dark text-gray-200",
         },
         size: {
             md: "py-3 px-3"
@@ -53,9 +53,9 @@ export default function TextInput({
             /> 
             )}
             <input className={cx(
-                "pl-10",
+                "pl-10 w-full",
                 inputTextVariants({variant, size, disabled}),
-                textVariants(),
+                textVariants(), 
                 className
                 )}
                 {...props}

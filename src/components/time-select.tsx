@@ -4,12 +4,12 @@ import Text, { textVariants } from "./text"
 
 export const timeSelectVariants = cva(`
     flex items-center justify-center rounded-lg 
-    cursor-pointer border border-gray-400  
+    cursor-pointer border border-gray-500  
 
     `, {
     variants: {
         variant: {
-            primary: "bg-gray-700 hover:bg-gray-500  text-gray-400",
+            primary: "bg-gray-600 hover:bg-gray-500  text-gray-200",
             selected: "bg-gray-600 border-yellow text-yellow",
             disabled: "bg-transparent border-gray-500 text-gray-500 pointer-events-none" //provavelmente será retirado depois
         },
